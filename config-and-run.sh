@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+SERVER_ID=${TUTUM_CONTAINER_HOSTNAME##*-}
 echo "$SERVER_ID / $MAX_SERVERS" 
 if [ ! -z "$SERVER_ID" ] && [ ! -z "$MAX_SERVERS" ]; then
   echo "Starting up in clustered mode"
